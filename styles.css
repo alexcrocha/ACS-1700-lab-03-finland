@@ -57,7 +57,6 @@ h2 {
 .welcome {
   grid-area: welcome;
   background-image: url('images/finland-2.jpg');
-  background-position: ;
   justify-content: flex-end;
   align-items: flex-end;
 }
