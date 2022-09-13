@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:  "title title title title"
+                        "population welcome welcome welcome"
+                        "gdp code govt news";
+  gap: 1em;
+  width: 800px;
+  height: 600px;
+  /* I can't figure out which font family was used... */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 2.75em;
+}
+
+h2, p {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.grid-cell {
+  padding: 1em;
+  color: white;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.population {
+  grid-area: population;
+  background-image: url('images/finland-8.jpg');
+  justify-content: flex-end;
+}
+
+.welcome {
+  grid-area: welcome;
+  background-image: url('images/finland-2.jpg');
+  background-position: ;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.gdp {
+  grid-area: gdp;
+  background-image: url('images/finland-3.jpg');
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+
+.code {
+  grid-area: code;
+  background-image: url('images/finland-4.jpg');
+}
+
+.govt {
+  grid-area: govt;
+  background-image: url('images/finland-1.jpg');
+  justify-content: flex-end;
+}
+
+.news {
+  grid-area: news;
+  background-image: url('images/finland-5.jpg');
+  justify-content: space-around;
+
+}
+
+input {
+  border: none;
+}
+
+button {
+  align-self: flex-end;
+  border: none;
+  border-radius: 3px;
+}
